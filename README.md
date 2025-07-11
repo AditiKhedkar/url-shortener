@@ -1,3 +1,8 @@
+
+<img width="915" height="541" alt="image" src="https://github.com/user-attachments/assets/39ebcfc0-c114-4ef6-be2a-ec0df410e86a" />
+
+
+deployed on https://url-shortener-angular-aj.netlify.app/
 ### Description
 A client-side URL shortener application built with Angular 20 that allows users to create shortened versions of long URLs. The application provides a clean interface for URL input, validation, shortening, and management.
 
@@ -18,71 +23,7 @@ A client-side URL shortener application built with Angular 20 that allows users 
 - **Storage**: Browser localStorage
 - **Build Tool**: Angular CLI with esbuild
 
----
 
-## Architecture
-
-### Application Structure
-```
-src/
-├── components/
-│   ├── url-form/
-│   │   └── url-form.component.ts
-│   └── url-list/
-│       └── url-list.component.ts
-├── services/
-│   └── url-shortener.service.ts
-├── global_styles.css
-├── index.html
-└── main.ts
-```
-
-### Architecture Pattern
-The application follows a **Service-Oriented Architecture** with:
-- **Presentation Layer**: Angular components handling UI interactions
-- **Business Logic Layer**: Injectable services managing core functionality
-- **Data Layer**: Browser localStorage for persistence
-
-### Data Flow
-1. User input → UrlFormComponent
-2. Validation → UrlShortenerService
-3. URL shortening → UrlShortenerService
-4. State update → BehaviorSubject
-5. UI update → UrlListComponent
-6. Persistence → localStorage
-
----
-
-## Installation & Setup
-
-### Prerequisites
-- Node.js (v18 or higher)
-- npm (v9 or higher)
-- Angular CLI (v20 or higher)
-
-### Installation Steps
-```bash
-# Clone the repository
-git clone <repository-url>
-cd angular-url-shortener
-
-# Install dependencies
-npm install
-
-# Start development server
-npm start
-
-# Build for production
-npm run build
-```
-
-### Development Server
-```bash
-ng serve
-# Application runs on http://localhost:4200
-```
-
----
 
 ## Component Documentation
 
